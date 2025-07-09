@@ -1,0 +1,29 @@
+.header {
+  background-color: #e3f2fd;
+  padding: 3px 0;
+}
+
+.header__box {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__log {
+}
+.header__menuWrp {
+  li{
+    a{
+      color: #104952;
+      font-weight: 700;
+    }
+  }
+}
+.header__menuWrp:hover {
+  li{
+    a{
+      transition: .3s;
+      color: var(--mainColor);
+    }
+  }
+}
