@@ -1,0 +1,74 @@
+.numberOne {
+  margin-top: 40px;
+}
+.numberOne__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.numberOne__wrp {
+  background-image: url("../img/schaedlingsbekaempfung-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 24px 16px 24px 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    opacity: .8;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+  }
+}
+.numberOne__title,
+.numberOne__txt {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+.numberOne__title{
+  font-size: 18px;
+  font-weight: 700;
+}
+.professional__btnWrp {
+  position: relative;
+  z-index: 1;
+}
+.professional__btn {
+}
+.numberOne__ul {
+  background-color: #E3F2FD;
+  padding: 24px 16px 24px 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  border: 1px solid #1976D2;
+  li{
+    list-style-position: inside;
+    position: relative;
+    padding-left: 30px;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
