@@ -1,0 +1,61 @@
+.professional {
+  outline: auto;
+  background-image: url("../img/schaedlingsbekaempfung-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000BD;
+    top: 0;
+  }
+}
+.professional__box {
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+.professional__desc {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--mainColor);
+  text-decoration-line: underline;
+  text-shadow: 5px 20px 75px
+}
+.professional__title {
+  @include h1Title;
+}
+.professional__txt {
+  color: #fff;
+  font-size: 18px;
+}
+.professional__btnWrp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.professional__btn-txt {
+  color: #fff;
+  position: relative;
+  padding-left: 20px;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(0, 153, 0);
+    border-radius: 50%;
+    left: 0; 
+  }
+}
+.professional__btn {
+  @include btn;
+}
