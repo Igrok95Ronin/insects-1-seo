@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -108,7 +110,7 @@ a {
 body {
     margin: auto;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Rubik', Arial, sans-serif;
     font-size: 16px;
     max-width: 1920px;
     min-width: 320px;
@@ -118,7 +120,8 @@ body {
 :root {
     --maxWidth: 1200px;
     --btnColorFixed: #ff9800;
-    --mainColor: #ff9800
+    --mainColor: #ff9800;
+    --question: #1976D2;
 }
 
 @mixin h1Title {
@@ -129,9 +132,10 @@ body {
 }
 
 @mixin h2Title {
-    font-size: clamp(28px, 5vw, 32px);
+    font-size: clamp(28px, 5vw, 36px);
     font-weight: 600;
     margin: 0;
+    text-align: center;
 }
 
 @mixin btn {

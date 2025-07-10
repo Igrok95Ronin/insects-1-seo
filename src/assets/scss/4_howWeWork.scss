@@ -1,0 +1,56 @@
+.howWeWork {
+  margin-top: 70px;
+}
+.howWeWork__box {
+  padding: 48px 32px 48px 32px;
+  background-color: #FFD54F;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.howWeWork__title {
+  @include h2Title;
+}
+.howWeWork__question {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--question);
+}
+.howWeWork__wrp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.howWeWork__inner {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border-radius: 30px;
+  align-items: center;
+}
+.howWeWork__imgWrp {
+  margin-bottom: 10px;
+}
+.howWeWork__img {
+  width: 81px;
+  height: 81px;
+}
+.howWeWork__subTitle {
+  text-align: center;
+  color: var(--question);
+  font-weight: 700;
+}
+.howWeWork__txt {
+  text-align: center;
+}
+
+.professional__color{
+  background-color: #2e7d32;
+}
+.professional__color:hover{
+  background-color: #40a545;
+}
