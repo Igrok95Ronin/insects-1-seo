@@ -122,6 +122,7 @@ body {
     --btnColorFixed: #ff9800;
     --mainColor: #ff9800;
     --question: #1976D2;
+    --mainFon: #E3F2FD;
 }
 
 @mixin h1Title {
@@ -132,10 +133,17 @@ body {
 }
 
 @mixin h2Title {
-    font-size: clamp(28px, 5vw, 36px);
+    font-size: clamp(28px, 5vw, 32px);
     font-weight: 600;
     margin: 0;
     text-align: center;
+}
+
+@mixin h3Title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--question);
 }
 
 @mixin btn {
