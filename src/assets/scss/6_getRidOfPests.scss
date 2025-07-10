@@ -1,0 +1,70 @@
+.getRidOfPests {
+  margin-top: 70px;
+}
+.getRidOfPests__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.getRidOfPests__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.getRidOfPests__title {
+  @include h2Title;
+  text-align: left;
+}
+.getRidOfPests__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  li{
+    position: relative;
+    padding-left: 30px;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.getRidOfPests__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.getRidOfPests__txtColor {
+  color: var(--question);
+  font-weight: 700;
+}
+.getRidOfPests__txt {
+}
+.professional__btnWrp {
+}
+.professional__btn-txt {
+}
+.professional__btn {
+}
+.getRidOfPests__imgWrp {
+  max-width: 100%;
+  max-height: 100%;
+}
+.getRidOfPests__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.professional__btn-color{
+  background-color: #2e7d32;
+}
+.professional__btn-color:hover{
+  background-color: #40a545;
+}
