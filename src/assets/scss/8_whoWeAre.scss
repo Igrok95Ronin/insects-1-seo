@@ -25,8 +25,6 @@
   flex-direction: column;
   gap: 20px;
 }
-.whoWeAre__txt {
-}
 .whoWeAre__inner {
   display: flex;
   flex-direction: column;
@@ -70,12 +68,6 @@
 .whoWeAre__subTitle {
   font-weight: 700;
 }
-.professional__btnWrp {
-}
-.professional__btn-txt {
-}
-.professional__btn {
-}
 .whoWeAre__right {
   max-width: 100%;
   max-height: 100%;
@@ -90,7 +82,7 @@
   align-items: start;
 }
 .whoWeAre__ul{
-    display: flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
   li{

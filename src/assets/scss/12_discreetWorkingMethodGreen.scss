@@ -1,0 +1,19 @@
+.discreetWorkingMethodGreen {
+  margin-top: 70px;
+  background-color: #2e7d32;
+  color: #fff;
+}
+.discreetWorkingMethodGreen__box {
+  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.discreetWorkingMethodGreen__subTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+.discreetWorkingMethodGreen__title {
+  @include h2Title;
+  text-align: left;
+}
