@@ -1,3 +1,78 @@
+@media(max-width: 1024px) {
+    .howWeWork__wrp,
+    .getRidOfPests__box,
+    .whyYouShouldChooseUs__box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .slider__ul {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .slider__box {
+        padding: 22px;
+    }
+    .professional__box {
+        padding: 30px 0 50px;
+    }
+    .professional {
+        background-position-x: center;
+    }
+    .numberOne__box,
+    .yourExperts__box,
+    .whoWeAre__wrapper,
+    .whyYouShouldChooseUs__right,
+    .notSingleChance__box {
+        grid-template-columns: 1fr;
+    }
+    .howWeWork,
+    .yourExperts,
+    .getRidOfPests,
+    .whoWeAre,
+    .whyYouShouldChooseUs,
+    .slider,
+    .discreetWorkingMethodGreen {
+        margin-top: 40px;
+    }
+    .howWeWork__box {
+        padding: 32px 16px;
+    }
+    .yourExperts__box,
+    .whyYouShouldChooseUs,
+    .discreetWorkingMethodGreen__box,
+    .notSingleChance,
+    .reviews,
+    .faq,
+    .forms {
+        padding: 40px 0;
+    }
+    .discreetWorkingMethod__subTitle,
+    .discreetWorkingMethod__title,
+    .discreetWorkingMethodGreen__box,
+    .discreetWorkingMethodGreen__title {
+        text-align: center;
+    }
+    .discreetWorkingMethod__subTitle,
+    .whoWeAre__question,
+    .whyYouShouldChooseUs__subOneTitle,
+    .notSingleChance__subTitle {
+        font-size: 18px;
+    }
+    .whyYouShouldChooseUs__inner {
+        align-items: center;
+    }
+    .whyYouShouldChooseUs__txt,
+    .forms__subtitle {
+        text-align: center;
+    }
+    .notSingleChance__imgWrp {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
 @media(max-width: 500px) {
     .btnFixedD {
         display: none;
@@ -8,4 +83,14 @@
     footer {
         margin-bottom: 60px;
     }
+    .professional__desc,
+    .howWeWork__question {
+        font-size: 18px;    
+    }
+    .professional__txt,
+    .professional__btn {
+        font-size: 14px;
+    }
+
+
 }

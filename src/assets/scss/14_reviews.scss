@@ -1,29 +1,111 @@
+/* reviews.css */
 .reviews {
-  background-color: #E3F2FD;
-  padding: 75px 0;
+  background: linear-gradient(to bottom, #f7fafc, #eef3f8);
+  padding: 75px 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
+
 .reviews__box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.reviews__subTitle {
-  font-size: 20px;
-  font-weight: 700;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  color: var(--mainColor);
 }
+
+.reviews__subTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2ecc71;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .reviews__title {
-  @include h2Title;
+  font-size: 30px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  line-height: 1.4;
 }
+
+/* Обёртка отзывов */
 .reviews__wrp {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
 }
+
+/* Карточка отзыва */
 .reviews__inner {
-  background-color: #fff;
-  padding: 16px 16px 0 16px;
-  border-radius: 8px;
-  box-shadow: 8px 8px 20px 0 #00000025;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+}
+
+.reviews__inner::before {
+  content: "“";
+  font-size: 40px;
+  color: #2ecc71;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.reviews__inner::after {
+  content: "”";
+  font-size: 40px;
+  color: #2ecc71;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+/* Кнопка */
+.professional__btnWrp {
+  margin-top: 10px;
+}
+
+.professional__btn {
+  display: inline-block;
+  background: #2ecc71;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(46, 204, 113, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.professional__btn:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+  .reviews__title {
+    font-size: 24px;
+  }
+
+  .reviews__subTitle {
+    font-size: 16px;
+  }
+
+  .reviews__inner {
+    font-size: 14px;
+  }
+
+  .professional__btn {
+    width: 100%;
+    text-align: center;
+  }
 }

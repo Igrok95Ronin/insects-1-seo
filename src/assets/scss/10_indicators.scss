@@ -1,28 +1,57 @@
+/* indicators.css */
 .indicators {
-  padding: 30px 0;
-  border-bottom: 2px solid #E3F2FD;
+  background: linear-gradient(to right, #f0fbfc, #e8f1f6);
+  padding: 70px 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
+
 .indicators__box {
+  max-width: 1100px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
 }
+
 .indicators__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  border-right: 2px solid #E3F2FD;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.indicators__box > .indicators__inner:last-child{
-  border-right: none;
+
+.indicators__inner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
+
 .indicators__numbers {
-  font-family: 'Rubik', Arial, sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  color: #1976D2;
+  font-size: 36px;
+  font-weight: 800;
+  color: #2ecc71;
+  margin-bottom: 10px;
 }
+
 .indicators__desc {
-  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+  .indicators {
+    padding: 40px 15px;
+  }
+
+  .indicators__numbers {
+    font-size: 28px;
+  }
+
+  .indicators__desc {
+    font-size: 15px;
+  }
 }
